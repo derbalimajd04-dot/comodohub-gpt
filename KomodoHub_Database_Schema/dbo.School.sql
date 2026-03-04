@@ -1,0 +1,10 @@
+﻿USE KomodoHubDB;
+GO
+
+CREATE TABLE dbo.School (
+    school_id INT IDENTITY(1,1) PRIMARY KEY,
+    name NVARCHAR(150) NOT NULL,
+    region NVARCHAR(100) NOT NULL,
+    created_at DATETIME2 NOT NULL DEFAULT SYSUTCDATETIME()
+);
+GO
